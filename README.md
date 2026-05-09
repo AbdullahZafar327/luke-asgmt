@@ -104,9 +104,9 @@ cp .env.example .env
 LLM_PROVIDER=ollama
 OLLAMA_MODEL=llama3.2
 
-# Production — switch to Claude (get key from interviewer)
-# LLM_PROVIDER=claude
-# ANTHROPIC_API_KEY=sk-ant-...
+# Production — switch to Claude
+LLM_PROVIDER=claude
+ANTHROPIC_API_KEY=sk-ant-...
 ```
 
 ### Start the backend
