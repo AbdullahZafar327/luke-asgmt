@@ -88,7 +88,6 @@ cd backend
 # Create virtual environment and install dependencies
 uv venv
 source .venv/bin/activate      # Windows: .venv\Scripts\activate
-uv pip install -r requirements.txt
 
 # Install Playwright browser (required by Crawl4AI, first time only)
 playwright install chromium
@@ -104,7 +103,6 @@ cp .env.example .env
 # Local development — uses Ollama
 LLM_PROVIDER=ollama
 OLLAMA_MODEL=llama3.2
-OLLAMA_BASE_URL=http://localhost:11434
 
 # Production — switch to Claude (get key from interviewer)
 # LLM_PROVIDER=claude
